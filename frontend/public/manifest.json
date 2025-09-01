@@ -1,0 +1,12 @@
+{
+  "name": "Your App",
+  "short_name": "App",
+  "start_url": ".",
+  "display": "standalone",
+  "serviceworker": {
+    "src": "/service-worker.js",
+    "scope": "/",
+    "type": "classic",
+    "update_via_cache": "all"
+  }
+}

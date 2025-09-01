@@ -1,0 +1,13 @@
+@import "tailwindcss";
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #dcdcdc;
+}
+
+.user-details img {
+  width: 30px;
+  height: 30px;
+}
