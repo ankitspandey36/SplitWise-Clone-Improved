@@ -8,8 +8,9 @@ const app = express();
 
 
 app.use(cors({
-    origin: "https://split-wise-clone-improved.vercel.app",
-    credentials: true
+  origin: ["https://split-wise-clone-improved.vercel.app", "http://localhost:5173"],
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+  credentials: true
 }))
 
 app.use(express.json({ limit: "16kb" }))
@@ -26,7 +27,7 @@ app.post("/create-order", async (req, res) => {
   const { amount } = req.body;
   try {
     const order = await razorpay.orders.create({
-      amount: amount * 100, 
+      amount: amount * 100,
       currency: "INR",
     });
     res.json(order);
@@ -72,15 +73,15 @@ app.use("/user", userRoutes);
 import expenseRoutes from './routes/expense.routes.js';
 app.use("/expense", expenseRoutes);
 import groupRoutes from './routes/group.routes.js'
-app.use("/group",groupRoutes)
+app.use("/group", groupRoutes)
 export default app;
 
 
 
 app.use((err, req, res, next) => {
-    const statusCode = err.statuscode || 500;
-    res.status(statusCode).json({
-        success: false,
-        message: err.message || "Internal Server Error",
-    });
+  const statusCode = err.statuscode || 500;
+  res.status(statusCode).json({
+    success: false,
+    message: err.message || "Internal Server Error",
+  });
 });
