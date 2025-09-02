@@ -8,7 +8,7 @@ const app = express();
 
 
 app.use(cors({
-    origin: "https://split-wise-clone-improved.vercel.app/",
+    origin: "https://split-wise-clone-improved.vercel.app",
     credentials: true
 }))
 
