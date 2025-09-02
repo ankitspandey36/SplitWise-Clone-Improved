@@ -5,9 +5,9 @@ import transporter from "./nodeMailer.js"
 const verificationEmail = async (email, code) => {
     try {
         const info = await transporter.sendMail({
-            from: '"Splitwise" <chadcam132@gmail.com>',
+            from: '"Splitit" <chadcam132@gmail.com>',
             to: email,
-            subject: "Verification code for Splitwise",
+            subject: "Verification code for Splitit",
             text: "Verify Your email",
             html: code,
         });

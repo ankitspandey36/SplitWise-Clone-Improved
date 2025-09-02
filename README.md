@@ -1,4 +1,4 @@
-# SplitWise Clone - Improved Version  
+# Splitit - Improved Version  
 
 [![GitHub License](https://img.shields.io/github/license/ankitspandey36/SplitWise-Clone-Improved)](https://github.com/ankitspandey36/SplitWise-Clone-Improved/blob/main/LICENSE)  
 [![GitHub Repo size](https://img.shields.io/github/repo-size/ankitspandey36/SplitWise-Clone-Improved)](https://github.com/ankitspandey36/SplitWise-Clone-Improved)  
