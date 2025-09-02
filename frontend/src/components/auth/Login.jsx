@@ -16,6 +16,7 @@ const Login = () => {
       await axiosInstance.post("/user/login", { email, password });
       navigate("/splitwise/dashboard");
     } catch (error) {
+      console.log(error)
       alert("Unable to login. Please try again later.")
     }
     finally {
